@@ -1,0 +1,196 @@
+<configs>
+
+<set xpath="/twitch//property[@name='category']/value[@name='AnimalSpwans']">Spawns</set>
+<set xpath="/twitch//property[@name='category']/value[@name='AnimalSpwans']">Spawns</set>
+<set xpath="/twitch//property[@name='category']/value[@name='AnimalSpwans']">Spawns</set>
+	<append xpath="/twitch">
+	<!-- adding Category -->
+		<category name="Halloween" display_name="TwitchActionCategory_Halloween" icon="ui_game_symbol_bundle" />
+		<!-- Gacha Spawns -->
+		<action name="twitch_gachajunk" extends="twitch_spawnWeapon1">
+			<property name="command" value="#supply_gachajunk" />
+			<property name="command_key" value="TwitchAction_GachaBoxJunkCommand" />
+			<property name="title_key" value="TwitchAction_GachaBoxJunk" />
+			<property name="description_key" value="TwitchAction_GachaBoxJunkDesc" />
+			<property name="start_gamestage" value="0" />
+			<property name="event_name" value="spawn_gachajunk" />
+			<property name="default_cost" value="10" />
+			<property name="cooldown" value="0" />
+			<property name="category" value="Halloween" />
+		</action>
+		<action name="twitch_gachacommon" extends="twitch_spawnWeapon1">
+			<property name="command" value="#supply_gachacommon" />
+			<property name="command_key" value="TwitchAction_GachaBoxCommonCommand" />
+			<property name="title_key" value="TwitchAction_GachaBoxCommon" />
+			<property name="description_key" value="TwitchAction_GachaBoxCommonDesc" />
+			<property name="start_gamestage" value="0" />
+			<property name="event_name" value="spawn_gachacommon" />
+			<property name="default_cost" value="50" />
+			<property name="cooldown" value="0" />
+			<property name="category" value="Halloween" />
+		</action>
+		<action name="twitch_gachauncommon" extends="twitch_spawnWeapon1">
+			<property name="command" value="#supply_gachauncommon" />
+			<property name="command_key" value="TwitchAction_GachaBoxUncommonCommand" />
+			<property name="title_key" value="TwitchAction_GachaBoxUncommon" />
+			<property name="description_key" value="TwitchAction_GachaBoxUncommonDesc" />
+			<property name="start_gamestage" value="0" />
+			<property name="event_name" value="spawn_gachauncommon" />
+			<property name="default_cost" value="100" />
+			<property name="cooldown" value="0" />
+			<property name="category" value="Halloween" />
+		</action>
+		<action name="twitch_gacharare" extends="twitch_spawnWeapon1">
+			<property name="command" value="#supply_gacharare" />
+			<property name="command_key" value="TwitchAction_GachaBoxRareCommand" />
+			<property name="title_key" value="TwitchAction_GachaBoxRare" />
+			<property name="description_key" value="TwitchAction_GachaBoxRareDesc" />
+			<property name="start_gamestage" value="0" />
+			<property name="event_name" value="spawn_gacharare" />
+			<property name="default_cost" value="200" />
+			<property name="cooldown" value="0" />
+			<property name="category" value="Halloween" />
+		</action>
+		<action name="twitch_gachaepic" extends="twitch_spawnWeapon1">
+			<property name="command" value="#supply_gachaepic" />
+			<property name="command_key" value="TwitchAction_GachaBoxEpicCommand" />
+			<property name="title_key" value="TwitchAction_GachaBoxEpic" />
+			<property name="description_key" value="TwitchAction_GachaBoxEpicDesc" />
+			<property name="start_gamestage" value="0" />
+			<property name="event_name" value="spawn_gachaepic" />
+			<property name="default_cost" value="300" />
+			<property name="cooldown" value="0" />
+			<property name="category" value="Halloween" />
+		</action>
+		<action name="twitch_gachalegendary" extends="twitch_spawnWeapon1">
+			<property name="command" value="#supply_gachalegendary" />
+			<property name="command_key" value="TwitchAction_GachaBoxLegendaryCommand" />
+			<property name="title_key" value="TwitchAction_GachaBoxLegendary" />
+			<property name="description_key" value="TwitchAction_GachaBoxLegendaryDesc" />
+			<property name="start_gamestage" value="0" />
+			<property name="event_name" value="spawn_gachalegendary" />
+			<property name="default_cost" value="500" />
+			<property name="cooldown" value="0" />
+			<property name="special_only" value="false" />
+			<property name="category" value="Halloween" />
+		</action>
+		<action name="twitch_gachaheroic" extends="twitch_spawnWeapon1">
+			<property name="command" value="#supply_gachaheroic" />
+			<property name="command_key" value="TwitchAction_GachaBoxHeroicCommand" />
+			<property name="title_key" value="TwitchAction_GachaBoxHeroic" />
+			<property name="description_key" value="TwitchAction_GachaBoxHeroicDesc" />
+			<property name="start_gamestage" value="0" />
+			<property name="event_name" value="spawn_gachaheroic" />
+			<property name="default_cost" value="800" />
+			<property name="cooldown" value="0" />
+			<property name="special_only" value="false" />
+			<property name="category" value="Halloween" />
+		</action>
+		<!-- <action name="twitch_gachat1" extends="twitch_spawnWeapon1">
+			<property name="command" value="#supply_gachat1" />
+			<property name="command_key" value="TwitchAction_GachaBoxT1Command" />
+			<property name="title_key" value="TwitchAction_GachaBoxT1" />
+			<property name="description_key" value="TwitchAction_GachaBoxT1Desc" />
+			<property name="start_gamestage" value="0" />
+			<property name="event_name" value="spawn_gachat1" />
+			<property name="default_cost" value="0" />
+			<property name="cooldown" value="0" />
+			<property name="category" value="Halloween" />
+		</action>
+		<action name="twitch_gachat2" extends="twitch_spawnWeapon1">
+			<property name="command" value="#supply_gachat2" />
+			<property name="command_key" value="TwitchAction_GachaBoxT2Command" />
+			<property name="title_key" value="TwitchAction_GachaBoxT2" />
+			<property name="description_key" value="TwitchAction_GachaBoxT2Desc" />
+			<property name="start_gamestage" value="0" />
+			<property name="event_name" value="spawn_gachat2" />
+			<property name="default_cost" value="0" />
+			<property name="cooldown" value="0" />
+			<property name="category" value="Halloween" />
+		</action>
+		<action name="twitch_gachat3" extends="twitch_spawnWeapon1">
+			<property name="command" value="#supply_gachat3" />
+			<property name="command_key" value="TwitchAction_GachaBoxT3Command" />
+			<property name="title_key" value="TwitchAction_GachaBoxT3" />
+			<property name="description_key" value="TwitchAction_GachaBoxT3Desc" />
+			<property name="start_gamestage" value="0" />
+			<property name="event_name" value="spawn_gachat3" />
+			<property name="default_cost" value="0" />
+			<property name="cooldown" value="0" />
+			<property name="category" value="Halloween" />
+		</action>
+		<action name="twitch_gachat4" extends="twitch_spawnWeapon1">
+			<property name="command" value="#supply_gachat4" />
+			<property name="command_key" value="TwitchAction_GachaBoxT4Command" />
+			<property name="title_key" value="TwitchAction_GachaBoxT4" />
+			<property name="description_key" value="TwitchAction_GachaBoxT4Desc" />
+			<property name="start_gamestage" value="0" />
+			<property name="event_name" value="spawn_gachat4" />
+			<property name="default_cost" value="0" />
+			<property name="cooldown" value="0" />
+			<property name="category" value="Halloween" />
+		</action>
+		<action name="twitch_gachat5" extends="twitch_spawnWeapon1">
+			<property name="command" value="#supply_gachat5" />
+			<property name="command_key" value="TwitchAction_GachaBoxT5Command" />
+			<property name="title_key" value="TwitchAction_GachaBoxT5" />
+			<property name="description_key" value="TwitchAction_GachaBoxT5Desc" />
+			<property name="start_gamestage" value="0" />
+			<property name="event_name" value="spawn_gachat5" />
+			<property name="default_cost" value="0" />
+			<property name="cooldown" value="0" />
+			<property name="category" value="Halloween" />
+		</action>
+		<action name="twitch_gachat6" extends="twitch_spawnWeapon1">
+			<property name="command" value="#supply_gachat6" />
+			<property name="command_key" value="TwitchAction_GachaBoxT6Command" />
+			<property name="title_key" value="TwitchAction_GachaBoxT6" />
+			<property name="description_key" value="TwitchAction_GachaBoxT6Desc" />
+			<property name="start_gamestage" value="0" />
+			<property name="event_name" value="spawn_gachat6" />
+			<property name="default_cost" value="0" />
+			<property name="cooldown" value="0" />
+			<property name="category" value="Halloween" />
+		</action> -->
+		<action name="twitch_gachaall" extends="twitch_spawnWeapon1">
+			<property name="command" value="#supply_gacha" />
+			<property name="command_key" value="TwitchAction_GachaBoxAllCommand" />
+			<property name="title_key" value="TwitchAction_GachaBoxAll" />
+			<property name="description_key" value="TwitchAction_GachaBoxAllDesc" />
+			<property name="start_gamestage" value="0" />
+			<property name="event_name" value="spawn_gachaall" />
+			<property name="default_cost" value="0" />
+			<property name="cooldown" value="0" />
+			<property name="category" value="Halloween" />
+			<property name="single_day" value="true" />
+		</action>
+		<action name="twitch_spawnTurretPumpkinJackOLantern">
+			<property name="command" value="#supply_TurretPumpkinJackOLantern" />
+			<property name="command_key" value="TwitchAction_SupplyTurretPumpkinJackOLanternCommand" />
+			<property name="title_key" value="TwitchAction_SupplyTurretPumpkinJackOLantern" />
+			<property name="description_key" value="TwitchAction_SupplyTurretPumpkinJackOLanternDesc" />
+			<property name="category" value="Spawns,Supplies" />
+			<property name="event_name" value="spawn_TurretPumpkinJackOLantern" />
+			<property name="start_gamestage" value="0" />
+			<property name="default_cost" value="100" />
+			<property name="is_positive" value="true" />
+			<property name="is_crate" value="false" />
+			<property name="category" value="Halloween" />
+			<property name="cooldown" value="0" />
+		</action>
+		<action name="twitch_spawnJackCop">
+			<property name="command" value="#supply_JackCop" />
+			<property name="command_key" value="TwitchAction_SupplyJackCopCommand" />
+			<property name="title_key" value="TwitchAction_SupplyJackCop" />
+			<property name="description_key" value="TwitchAction_SupplyJackCopDesc" />
+			<property name="category" value="Spawns,Supplies" />
+			<property name="event_name" value="spawn_JackCop" />
+			<property name="start_gamestage" value="0" />
+			<property name="default_cost" value="300" />
+			<property name="is_positive" value="false" />
+			<property name="is_crate" value="false" />
+			<property name="category" value="Halloween" />
+			<property name="cooldown" value="60" />
+		</action>
+	</append>
+</configs>
