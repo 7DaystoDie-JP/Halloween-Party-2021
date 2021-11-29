@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/lootcontainers">
+		<lootgroup name="event">
+			<item name="decoPumpkinJackOLantern"  count="1,3"/>
+			<item name="JackGrenade" prob="0.1" count="1,2"/>
+			<item name="ammoJackRocket" prob="0.1" count="1,2"/>
+			<item name="ammoJackRocketFrag" prob="0.1" count="1,2"/>
+			<item name="thrownTimedChargeJackOLantern" prob="0.1" count="1,2"/>
+			<item name="MinePumpkinJackOLantern" prob="0.1" count="1,2"/>
+		</lootgroup>
+		<lootcontainer id="210" count="1,3" size="6,3" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+			<item group="event" />
+		</lootcontainer>
+	</append>
+		<insertAfter xpath="/lootcontainers/lootgroup[@name='twitch_electrical2']">
+		<lootgroup name="groupGachaToolsT1" loot_quality_template="QLTemplateT3">
+			<item name="meleeToolRepairT1ClawHammer" />
+			<item name="meleeToolPickT1IronPickaxe" />
+			<item name="meleeToolAxeT1IronFireaxe" />
+			<item name="meleeToolShovelT1IronShovel" />
+			<item name="meleeToolSalvageT1Wrench" />
+		</lootgroup>
+		<lootgroup name="groupGachaMeleeT1" loot_quality_template="QLTemplateT3">
+			<item name="meleeWpnBladeT1CandyKnife" />
+			<item name="meleeWpnClubT1CandyClub" />
+			<item name="meleeWpnBatonT1JunkBaton" />
+			<item name="meleeWpnBladeT1HuntingKnife" />
+			<item name="meleeWpnClubT1BaseballBat" />
+			<item name="meleeWpnSledgeT1IronSledgehammer" />
+			<item name="meleeWpnSpearT1IronSpear" />
+			<item name="meleeWpnKnucklesT1IronKnuckles" />
+		</lootgroup>
+		<lootgroup name="groupGachaRangedT1" loot_quality_template="QLTemplateT3">
+			<item name="gunHandgunT1Pistol" />
+			<item name="gunShotgunT1DoubleBarrel" />
+			<item name="gunBowT1WoodenBow" />
+			<item name="gunBowT1IronCrossbow" />
+			<item name="gunMGT1AK47" />
+			<item name="gunRifleT1HuntingRifle" />
+		</lootgroup>
+		<lootgroup name="groupGachaArmorT1" loot_quality_template="QLTemplateT3">
+			<item name="armorClothPants" />
+			<item name="armorClothJacket" />
+			<item name="armorClothBoots" />
+			<item name="armorClothGloves" />
+			<item name="armorClothHat" />
+			<item name="armorScrapHelmet" />
+			<item name="armorScrapChest" />
+			<item name="armorScrapGloves" />
+			<item name="armorScrapLegs" />
+			<item name="armorScrapBoots" />
+			<item name="armorLeatherBoots" />
+			<item name="armorLeatherPants" />
+			<item name="armorLeatherChest" />
+			<item name="armorLeatherGloves" />
+			<item name="armorLeatherHood" />
+			<item name="armorIronGloves" />
+			<item name="armorIronHelmet" />
+			<item name="armorIronBoots" />
+			<item name="armorIronLegs" />
+			<item name="armorIronChest" />
+			<item name="armorMilitaryGloves" />
+			<item name="armorMilitaryHelmet" />
+			<item name="armorMilitaryBoots" />
+			<item name="armorMilitaryLegs" />
+			<item name="armorMilitaryVest" />
+			<item name="armorSteelBoots" />
+			<item name="armorSteelLegs" />
+			<item name="armorSteelChest" />
+			<item name="armorSteelGloves" />
+			<item name="armorSteelHelmet" />
+		</lootgroup>
+		<lootgroup name="groupGachaToolsT2" loot_quality_template="QLTemplateT2">
+			<item name="meleeToolRepairT1ClawHammer" />
+			<item name="meleeToolPickT1IronPickaxe" />
+			<item name="meleeToolAxeT1IronFireaxe" />
+			<item name="meleeToolShovelT1IronShovel" />
+			<item name="meleeToolSalvageT1Wrench" />
+		</lootgroup>
+		<lootgroup name="groupGachaMeleeT2" loot_quality_template="QLTemplateT2">
+			<item name="meleeWpnBladeT1CandyKnife" />
+			<item name="meleeWpnClubT1CandyClub" />
+			<item name="meleeWpnBatonT1JunkBaton" />
+			<item name="meleeWpnBladeT1HuntingKnife" />
+			<item name="meleeWpnClubT1BaseballBat" />
+			<item name="meleeWpnSledgeT1IronSledgehammer" />
+			<item name="meleeWpnSpearT1IronSpear" />
+			<item name="meleeWpnKnucklesT1IronKnuckles" />
+		</lootgroup>
+		<lootgroup name="groupGachaRangedT2" loot_quality_template="QLTemplateT2">
+			<item name="gunHandgunT1Pistol" />
+			<item name="gunShotgunT1DoubleBarrel" />
+			<item name="gunBowT1WoodenBow" />
+			<item name="gunBowT1IronCrossbow" />
+			<item name="gunMGT1AK47" />
+			<item name="gunRifleT1HuntingRifle" />
+		</lootgroup>
+		<lootgroup name="groupGachaArmorT2" loot_quality_template="QLTemplateT2">
+			<item name="armorClothPants" />
+			<item name="armorClothJacket" />
+			<item name="armorClothBoots" />
+			<item name="armorClothGloves" />
+			<item name="armorClothHat" />
+			<item name="armorScrapHelmet" />
+			<item name="armorScrapChest" />
+			<item name="armorScrapGloves" />
+			<item name="armorScrapLegs" />
+			<item name="armorScrapBoots" />
+			<item name="armorLeatherBoots" />
+			<item name="armorLeatherPants" />
+			<item name="armorLeatherChest" />
+			<item name="armorLeatherGloves" />
+			<item name="armorLeatherHood" />
+			<item name="armorIronGloves" />
+			<item name="armorIronHelmet" />
+			<item name="armorIronBoots" />
+			<item name="armorIronLegs" />
+			<item name="armorIronChest" />
+			<item name="armorMilitaryGloves" />
+			<item name="armorMilitaryHelmet" />
+			<item name="armorMilitaryBoots" />
+			<item name="armorMilitaryLegs" />
+			<item name="armorMilitaryVest" />
+			<item name="armorSteelBoots" />
+			<item name="armorSteelLegs" />
+			<item name="armorSteelChest" />
+			<item name="armorSteelGloves" />
+			<item name="armorSteelHelmet" />
+		</lootgroup>
+		<lootgroup name="groupGachaToolsT3" loot_quality_template="QLTemplateT2">
+			<item name="meleeToolRepairT1ClawHammer" />
+			<item name="meleeToolPickT1IronPickaxe" />
+			<item name="meleeToolAxeT1IronFireaxe" />
+			<item name="meleeToolShovelT1IronShovel" />
+			<item name="meleeToolSalvageT1Wrench" />
+			<item name="meleeToolPickT2SteelPickaxe" />
+			<item name="meleeToolAxeT2SteelAxe" />
+			<item name="meleeToolShovelT2SteelShovel" />
+			<item name="meleeToolSalvageT2Ratchet" />
+		</lootgroup>
+		<lootgroup name="groupGachaMeleeT3" loot_quality_template="QLTemplateT2">
+			<item name="meleeWpnBladeT1CandyKnife" />
+			<item name="meleeWpnClubT1CandyClub" />
+			<item name="meleeWpnBatonT1JunkBaton" />
+			<item name="meleeWpnBladeT1HuntingKnife" />
+			<item name="meleeWpnClubT1BaseballBat" />
+			<item name="meleeWpnSledgeT1IronSledgehammer" />
+			<item name="meleeWpnSpearT1IronSpear" />
+			<item name="meleeWpnKnucklesT1IronKnuckles" />
+			<item name="meleeWpnBatonT2StunBaton" />
+		</lootgroup>
+		<lootgroup name="groupGachaRangedT3" loot_quality_template="QLTemplateT2">
+			<item name="gunHandgunT1Pistol" />
+			<item name="gunShotgunT1DoubleBarrel" />
+			<item name="gunBowT1WoodenBow" />
+			<item name="gunBowT1IronCrossbow" />
+			<item name="gunMGT1AK47" />
+			<item name="gunRifleT1HuntingRifle" />
+			<item name="gunShotgunT2PumpShotgun" />
+			<item name="gunRifleT2MarksmanRifle" />
+			<item name="gunMGT2TacticalAR" />
+			<item name="gunHandgunT2Magnum44" />
+		</lootgroup>
+		<lootgroup name="groupGachaArmorT3" loot_quality_template="QLTemplateT2">
+			<item name="armorClothPants" />
+			<item name="armorClothJacket" />
+			<item name="armorClothBoots" />
+			<item name="armorClothGloves" />
+			<item name="armorClothHat" />
+			<item name="armorScrapHelmet" />
+			<item name="armorScrapChest" />
+			<item name="armorScrapGloves" />
+			<item name="armorScrapLegs" />
+			<item name="armorScrapBoots" />
+			<item name="armorLeatherBoots" />
+			<item name="armorLeatherPants" />
+			<item name="armorLeatherChest" />
+			<item name="armorLeatherGloves" />
+			<item name="armorLeatherHood" />
+			<item name="armorIronGloves" />
+			<item name="armorIronHelmet" />
+			<item name="armorIronBoots" />
+			<item name="armorIronLegs" />
+			<item name="armorIronChest" />
+		</lootgroup>
+		<lootgroup name="groupGachaToolsT4" loot_quality_template="QLTemplateT1">
+			<item name="meleeToolRepairT1ClawHammer" />
+			<item name="meleeToolPickT1IronPickaxe" />
+			<item name="meleeToolAxeT1IronFireaxe" />
+			<item name="meleeToolShovelT1IronShovel" />
+			<item name="meleeToolSalvageT1Wrench" />
+			<item name="meleeToolPickT2SteelPickaxe" />
+			<item name="meleeToolAxeT2SteelAxe" />
+			<item name="meleeToolShovelT2SteelShovel" />
+			<item name="meleeToolSalvageT2Ratchet" />
+			<item name="meleeToolSalvageT3ImpactDriver" />
+			<item name="meleeToolAxeT3Chainsaw" />
+			<item name="meleeToolPickT3Auger" />
+			<item name="meleeToolRepairT3Nailgun" />
+		</lootgroup>
+		<lootgroup name="groupGachaMeleeT4" loot_quality_template="QLTemplateT1">
+			<item name="meleeWpnBladeT1CandyKnife" />
+			<item name="meleeWpnClubT1CandyClub" />
+			<item name="meleeWpnBatonT1JunkBaton" />
+			<item name="meleeWpnBladeT1HuntingKnife" />
+			<item name="meleeWpnClubT1BaseballBat" />
+			<item name="meleeWpnSledgeT1IronSledgehammer" />
+			<item name="meleeWpnSpearT1IronSpear" />
+			<item name="meleeWpnKnucklesT1IronKnuckles" />
+			<item name="meleeWpnBatonT2StunBaton" />
+			<item name="meleeWpnBladeT3Machete" />
+			<item name="meleeWpnClubT3SteelClub" />
+			<item name="meleeWpnSledgeT3SteelSledgehammer" />
+			<item name="meleeWpnSpearT3SteelSpear" />
+			<item name="meleeWpnKnucklesT3SteelKnuckles" />
+			<item name="meleeWpnBatonT3PlasmaBaton" />
+		</lootgroup>
+		<lootgroup name="groupGachaRangedT4" loot_quality_template="QLTemplateT1">
+			<item name="gunHandgunT1Pistol" />
+			<item name="gunShotgunT1DoubleBarrel" />
+			<item name="gunBowT1WoodenBow" />
+			<item name="gunBowT1IronCrossbow" />
+			<item name="gunMGT1AK47" />
+			<item name="gunRifleT1HuntingRifle" />
+			<item name="gunShotgunT2PumpShotgun" />
+			<item name="gunRifleT2MarksmanRifle" />
+			<item name="gunMGT2TacticalAR" />
+			<item name="gunHandgunT2Magnum44" />
+			<item name="gunMGT3M60" />
+			<item name="gunRifleT3SniperRifle" />
+			<item name="gunHandgunT3DesertVulture" />
+			<item name="gunHandgunT3SMG5" />
+			<item name="gunShotgunT3AutoShotgun" />
+			<item name="gunBowT3CompoundBow" />
+			<item name="gunBowT3CompoundCrossbow" />
+			<item name="gunExplosivesT3RocketLauncher" />
+		</lootgroup>
+		<lootgroup name="groupGachaArmorT4" loot_quality_template="QLTemplateT1">
+			<item name="armorClothPants" />
+			<item name="armorClothJacket" />
+			<item name="armorClothBoots" />
+			<item name="armorClothGloves" />
+			<item name="armorClothHat" />
+			<item name="armorScrapHelmet" />
+			<item name="armorScrapChest" />
+			<item name="armorScrapGloves" />
+			<item name="armorScrapLegs" />
+			<item name="armorScrapBoots" />
+			<item name="armorLeatherBoots" />
+			<item name="armorLeatherPants" />
+			<item name="armorLeatherChest" />
+			<item name="armorLeatherGloves" />
+			<item name="armorLeatherHood" />
+			<item name="armorIronGloves" />
+			<item name="armorIronHelmet" />
+			<item name="armorIronBoots" />
+			<item name="armorIronLegs" />
+			<item name="armorIronChest" />
+			<item name="armorMilitaryGloves" />
+			<item name="armorMilitaryHelmet" />
+			<item name="armorMilitaryBoots" />
+			<item name="armorMilitaryLegs" />
+			<item name="armorMilitaryVest" />
+			<item name="armorSteelBoots" />
+			<item name="armorSteelLegs" />
+			<item name="armorSteelChest" />
+			<item name="armorSteelGloves" />
+			<item name="armorSteelHelmet" />
+		</lootgroup>
+		<lootgroup name="groupGachaToolsT5" loot_quality_template="QLTemplateT1">
+			<item name="meleeWpnBladeT1CandyKnife" />
+			<item name="meleeWpnClubT1CandyClub" />
+			<item name="meleeToolRepairT1ClawHammer" />
+			<item name="meleeToolPickT1IronPickaxe" />
+			<item name="meleeToolAxeT1IronFireaxe" />
+			<item name="meleeToolShovelT1IronShovel" />
+			<item name="meleeToolSalvageT1Wrench" />
+			<item name="meleeToolPickT2SteelPickaxe" />
+			<item name="meleeToolAxeT2SteelAxe" />
+			<item name="meleeToolShovelT2SteelShovel" />
+			<item name="meleeToolSalvageT2Ratchet" />
+			<item name="meleeToolSalvageT3ImpactDriver" />
+			<item name="meleeToolAxeT3Chainsaw" />
+			<item name="meleeToolPickT3Auger" />
+			<item name="meleeToolRepairT3Nailgun" />
+		</lootgroup>
+		<lootgroup name="groupGachaMeleeT5" loot_quality_template="QLTemplateT1">
+			<item name="meleeWpnBatonT1JunkBaton" />
+			<item name="meleeWpnBladeT1HuntingKnife" />
+			<item name="meleeWpnClubT1BaseballBat" />
+			<item name="meleeWpnSledgeT1IronSledgehammer" />
+			<item name="meleeWpnSpearT1IronSpear" />
+			<item name="meleeWpnKnucklesT1IronKnuckles" />
+			<item name="meleeWpnBatonT2StunBaton" />
+			<item name="meleeWpnBladeT3Machete" />
+			<item name="meleeWpnClubT3SteelClub" />
+			<item name="meleeWpnSledgeT3SteelSledgehammer" />
+			<item name="meleeWpnSpearT3SteelSpear" />
+			<item name="meleeWpnKnucklesT3SteelKnuckles" />
+			<item name="meleeWpnBatonT3PlasmaBaton" />
+		</lootgroup>
+		<lootgroup name="groupGachaRangedT5" loot_quality_template="QLTemplateT1">
+			<item name="gunHandgunT1Pistol" />
+			<item name="gunShotgunT1DoubleBarrel" />
+			<item name="gunBowT1WoodenBow" />
+			<item name="gunBowT1IronCrossbow" />
+			<item name="gunMGT1AK47" />
+			<item name="gunRifleT1HuntingRifle" />
+			<item name="gunShotgunT2PumpShotgun" />
+			<item name="gunMGT2TacticalAR" />
+			<item name="gunRifleT2MarksmanRifle" />
+			<item name="gunHandgunT2Magnum44" />
+			<item name="gunMGT3M60" />
+			<item name="gunRifleT3SniperRifle" />
+			<item name="gunHandgunT3DesertVulture" />
+			<item name="gunHandgunT3SMG5" />
+			<item name="gunShotgunT3AutoShotgun" />
+			<item name="gunBowT3CompoundBow" />
+			<item name="gunBowT3CompoundCrossbow" />
+			<item name="gunExplosivesT3RocketLauncher" />
+		</lootgroup>
+		<lootgroup name="groupGachaArmorT5" loot_quality_template="QLTemplateT1">
+			<item name="armorClothPants" />
+			<item name="armorClothJacket" />
+			<item name="armorClothBoots" />
+			<item name="armorClothGloves" />
+			<item name="armorClothHat" />
+			<item name="armorScrapHelmet" />
+			<item name="armorScrapChest" />
+			<item name="armorScrapGloves" />
+			<item name="armorScrapLegs" />
+			<item name="armorScrapBoots" />
+			<item name="armorLeatherBoots" />
+			<item name="armorLeatherPants" />
+			<item name="armorLeatherChest" />
+			<item name="armorLeatherGloves" />
+			<item name="armorLeatherHood" />
+			<item name="armorIronGloves" />
+			<item name="armorIronHelmet" />
+			<item name="armorIronBoots" />
+			<item name="armorIronLegs" />
+			<item name="armorIronChest" />
+			<item name="armorMilitaryGloves" />
+			<item name="armorMilitaryHelmet" />
+			<item name="armorMilitaryBoots" />
+			<item name="armorMilitaryLegs" />
+			<item name="armorMilitaryVest" />
+			<item name="armorSteelBoots" />
+			<item name="armorSteelLegs" />
+			<item name="armorSteelChest" />
+			<item name="armorSteelGloves" />
+			<item name="armorSteelHelmet" />
+		</lootgroup>
+		<lootgroup name="groupGachaToolsT6" loot_quality_template="QLTemplateT0">
+			<item name="meleeWpnBladeT1CandyKnife" />
+			<item name="meleeWpnClubT1CandyClub" />
+			<item name="meleeToolRepairT1ClawHammer" />
+			<item name="meleeToolPickT1IronPickaxe" />
+			<item name="meleeToolAxeT1IronFireaxe" />
+			<item name="meleeToolShovelT1IronShovel" />
+			<item name="meleeToolSalvageT1Wrench" />
+			<item name="meleeToolPickT2SteelPickaxe" />
+			<item name="meleeToolAxeT2SteelAxe" />
+			<item name="meleeToolShovelT2SteelShovel" />
+			<item name="meleeToolSalvageT2Ratchet" />
+			<item name="meleeToolSalvageT3ImpactDriver" />
+			<item name="meleeToolAxeT3Chainsaw" />
+			<item name="meleeToolPickT3Auger" />
+			<item name="meleeToolRepairT3Nailgun" />
+		</lootgroup>
+		<lootgroup name="groupGachaMeleeT6" loot_quality_template="QLTemplateT0">
+			<item name="meleeWpnBatonT1JunkBaton" />
+			<item name="meleeWpnBladeT1HuntingKnife" />
+			<item name="meleeWpnClubT1BaseballBat" />
+			<item name="meleeWpnSledgeT1IronSledgehammer" />
+			<item name="meleeWpnSpearT1IronSpear" />
+			<item name="meleeWpnKnucklesT1IronKnuckles" />
+			<item name="meleeWpnBatonT2StunBaton" />
+			<item name="meleeWpnBladeT3Machete" />
+			<item name="meleeWpnClubT3SteelClub" />
+			<item name="meleeWpnSledgeT3SteelSledgehammer" />
+			<item name="meleeWpnSpearT3SteelSpear" />
+			<item name="meleeWpnKnucklesT3SteelKnuckles" />
+			<item name="meleeWpnBatonT3PlasmaBaton" />
+		</lootgroup>
+		<lootgroup name="groupGachaRangedT6" loot_quality_template="QLTemplateT0">
+			<item name="gunHandgunT1Pistol" />
+			<item name="gunShotgunT1DoubleBarrel" />
+			<item name="gunBowT1WoodenBow" />
+			<item name="gunBowT1IronCrossbow" />
+			<item name="gunMGT1AK47" />
+			<item name="gunRifleT1HuntingRifle" />
+			<item name="gunShotgunT2PumpShotgun" />
+			<item name="gunMGT2TacticalAR" />
+			<item name="gunRifleT2MarksmanRifle" />
+			<item name="gunHandgunT2Magnum44" />
+			<item name="gunMGT3M60" />
+			<item name="gunRifleT3SniperRifle" />
+			<item name="gunHandgunT3DesertVulture" />
+			<item name="gunHandgunT3SMG5" />
+			<item name="gunShotgunT3AutoShotgun" />
+			<item name="gunBowT3CompoundBow" />
+			<item name="gunBowT3CompoundCrossbow" />
+			<item name="gunExplosivesT3RocketLauncher" />
+		</lootgroup>
+		<lootgroup name="groupGachaArmorT6" loot_quality_template="QLTemplateT0">
+			<item name="armorClothPants" />
+			<item name="armorClothJacket" />
+			<item name="armorClothBoots" />
+			<item name="armorClothGloves" />
+			<item name="armorClothHat" />
+			<item name="armorScrapHelmet" />
+			<item name="armorScrapChest" />
+			<item name="armorScrapGloves" />
+			<item name="armorScrapLegs" />
+			<item name="armorScrapBoots" />
+			<item name="armorLeatherBoots" />
+			<item name="armorLeatherPants" />
+			<item name="armorLeatherChest" />
+			<item name="armorLeatherGloves" />
+			<item name="armorLeatherHood" />
+			<item name="armorIronGloves" />
+			<item name="armorIronHelmet" />
+			<item name="armorIronBoots" />
+			<item name="armorIronLegs" />
+			<item name="armorIronChest" />
+			<item name="armorMilitaryGloves" />
+			<item name="armorMilitaryHelmet" />
+			<item name="armorMilitaryBoots" />
+			<item name="armorMilitaryLegs" />
+			<item name="armorMilitaryVest" />
+			<item name="armorSteelBoots" />
+			<item name="armorSteelLegs" />
+			<item name="armorSteelChest" />
+			<item name="armorSteelGloves" />
+			<item name="armorSteelHelmet" />
+		</lootgroup>
+		<!-- Gacha Junk -->
+		<lootgroup name="groupcntShippingCrateJunk" count="1">
+			<item name="cntShippingCrateJunk" count="1" />
+		</lootgroup>
+		<!-- Gacha Common -->
+		<lootgroup name="groupcntShippingCrateCommon" count="1">
+			<item name="cntShippingCrateCommon" count="1" />
+		</lootgroup>
+		<!-- Gacha Uncommon -->
+		<lootgroup name="groupcntShippingCrateUncommon" count="1">
+			<item name="cntShippingCrateUncommon" count="1" />
+		</lootgroup>
+		<!-- Gacha Rare -->
+		<lootgroup name="groupcntShippingCrateRare" count="1">
+			<item name="cntShippingCrateRare" count="1" />
+		</lootgroup>
+		<!-- Gacha Epic -->
+		<lootgroup name="groupcntShippingCrateEpic" count="1">
+			<item name="cntShippingCrateEpic" count="1" />
+		</lootgroup>
+		<!-- Gacha Legendary -->
+		<lootgroup name="groupcntShippingCrateLegendary" count="1">
+			<item name="cntShippingCrateLegendary" count="1" />
+		</lootgroup>
+		<!-- Gacha Heroic -->
+		<lootgroup name="groupcntShippingCrateHeroic" count="1">
+			<item name="cntShippingCrateHeroic" count="1" />
+		</lootgroup>
+		<!-- Tier 1 Reward -->
+		<lootgroup name="groupcntShippingCrateT1" count="1">
+			<item name="cntShippingCrateJunk" count="1" />
+			<item name="cntShippingCrateJunk" count="1,2" />
+			<item name="cntShippingCrateJunk" count="2,3" />
+			<item name="cntShippingCrateCommon" count="1" />
+		</lootgroup>
+		<!-- Tier2 Reward -->
+		<lootgroup name="groupcntShippingCrateT2" count="1">
+			<item name="cntShippingCrateCommon" count="1" />
+			<item name="cntShippingCrateCommon" count="1,2" />
+			<item name="cntShippingCrateCommon" count="2,3" />
+			<item name="cntShippingCrateUncommon" count="1" />
+		</lootgroup>
+		<!-- Tier 3 Reward -->
+		<lootgroup name="groupcntShippingCrateT3" count="1">
+			<item name="cntShippingCrateUncommon" count="1" />
+			<item name="cntShippingCrateUncommon" count="1,2" />
+			<item name="cntShippingCrateUncommon" count="2,3" />
+			<item name="cntShippingCrateRare" count="1" />
+		</lootgroup>
+		<!-- Tier 4 Reward -->
+		<lootgroup name="groupcntShippingCrateT4" count="1">
+			<item name="cntShippingCrateRare" count="1" />
+			<item name="cntShippingCrateRare" count="1,2" />
+			<item name="cntShippingCrateRare" count="2,3" />
+			<item name="cntShippingCrateEpic" count="1" />
+		</lootgroup>
+		<!-- Tier 5 Reward -->
+		<lootgroup name="groupcntShippingCrateT5" count="1">
+			<item name="cntShippingCrateEpic" count="1" />
+			<item name="cntShippingCrateEpic" count="1,2" />
+			<item name="cntShippingCrateEpic" count="2,3" />
+			<item name="cntShippingCrateLegendary" count="1" />
+		</lootgroup>
+		<!-- Tier 6 Reward -->
+		<lootgroup name="groupcntShippingCrateT6" count="1">
+			<item name="cntShippingCrateLegendary" count="1" />
+			<item name="cntShippingCrateLegendary" count="1,2" />
+			<item name="cntShippingCrateLegendary" count="2,3" />
+			<item name="cntShippingCrateHeroic" count="1" />
+		</lootgroup>
+		<!-- All -->
+		<lootgroup name="groupcntShippingCrateAll" count="1">
+			<item name="cntShippingCrateJunk" count="1" />
+			<item name="cntShippingCrateJunk" count="1" />
+			<item name="cntShippingCrateJunk" count="1" />
+			<item name="cntShippingCrateCommon" count="1" />
+			<item name="cntShippingCrateCommon" count="1" />
+			<item name="cntShippingCrateUncommon" count="1" />
+			<item name="cntShippingCrateUncommon" count="1" />
+			<item name="cntShippingCrateRare" count="1" />
+			<item name="cntShippingCrateRare" count="1" />
+			<item name="cntShippingCrateEpic" count="1" />
+			<item name="cntShippingCrateLegendary" count="1" />
+			<item name="cntShippingCrateHeroic" count="1" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestToolsT1">
+			<item group="groupGachaToolsT1" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestToolsT2">
+			<item group="groupGachaToolsT1" loot_prob_template="ProbT0" />
+			<item group="groupGachaToolsT2" loot_prob_template="ProbT1" />
+			<item group="groupGachaToolsT3" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestToolsT3">
+			<item group="groupGachaToolsT2" loot_prob_template="ProbT0" />
+			<item group="groupGachaToolsT3" loot_prob_template="ProbT1" />
+			<item group="groupGachaToolsT4" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestToolsT4">
+			<item group="groupGachaToolsT3" loot_prob_template="ProbT0" />
+			<item group="groupGachaToolsT4" loot_prob_template="ProbT1" />
+			<item group="groupGachaToolsT5" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestToolsT5">
+			<item group="groupGachaToolsT4" loot_prob_template="ProbT0" />
+			<item group="groupGachaToolsT5" loot_prob_template="ProbT1" />
+			<item group="groupGachaToolsT6" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestToolsT6">
+			<item group="groupGachaToolsT6" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestWeaponsMeleeT1">
+			<item group="groupGachaMeleeT1" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestWeaponsMeleeT2">
+			<item group="groupGachaMeleeT1" loot_prob_template="ProbT0" />
+			<item group="groupGachaMeleeT2" loot_prob_template="ProbT1" />
+			<item group="groupGachaMeleeT3" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestWeaponsMeleeT3">
+			<item group="groupGachaMeleeT2" loot_prob_template="ProbT0" />
+			<item group="groupGachaMeleeT3" loot_prob_template="ProbT1" />
+			<item group="groupGachaMeleeT4" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestWeaponsMeleeT4">
+			<item group="groupGachaMeleeT3" loot_prob_template="ProbT0" />
+			<item group="groupGachaMeleeT4" loot_prob_template="ProbT1" />
+			<item group="groupGachaMeleeT5" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestWeaponsMeleeT5">
+			<item group="groupGachaMeleeT4" loot_prob_template="ProbT0" />
+			<item group="groupGachaMeleeT5" loot_prob_template="ProbT1" />
+			<item group="groupGachaMeleeT6" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestWeaponsMeleeT6">
+			<item group="groupGachaMeleeT6" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestWeaponsRangedT1">
+			<item group="groupGachaRangedT1" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestWeaponsRangedT2">
+			<item group="groupGachaRangedT1" loot_prob_template="ProbT0" />
+			<item group="groupGachaRangedT2" loot_prob_template="ProbT1" />
+			<item group="groupGachaRangedT3" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestWeaponsRangedT3">
+			<item group="groupGachaRangedT2" loot_prob_template="ProbT0" />
+			<item group="groupGachaRangedT3" loot_prob_template="ProbT1" />
+			<item group="groupGachaRangedT4" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestWeaponsRangedT4">
+			<item group="groupGachaRangedT3" loot_prob_template="ProbT0" />
+			<item group="groupGachaRangedT4" loot_prob_template="ProbT1" />
+			<item group="groupGachaRangedT5" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestWeaponsRangedT5">
+			<item group="groupGachaRangedT4" loot_prob_template="ProbT0" />
+			<item group="groupGachaRangedT5" loot_prob_template="ProbT1" />
+			<item group="groupGachaRangedT6" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestWeaponsRangedT6">
+			<item group="groupGachaRangedT6" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestArmorT1">
+			<item group="groupGachaArmorT1" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestArmorT2">
+			<item group="groupGachaArmorT2" loot_prob_template="ProbT0" />
+			<item group="groupGachaArmorT3" loot_prob_template="ProbT1" />
+			<item group="groupGachaArmorT4" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestArmorT3">
+			<item group="groupGachaArmorT2" loot_prob_template="ProbT0" />
+			<item group="groupGachaArmorT3" loot_prob_template="ProbT1" />
+			<item group="groupGachaArmorT4" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestArmorT4">
+			<item group="groupGachaArmorT3" loot_prob_template="ProbT0" />
+			<item group="groupGachaArmorT4" loot_prob_template="ProbT1" />
+			<item group="groupGachaArmorT5" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestArmorT5">
+			<item group="groupGachaArmorT4" loot_prob_template="ProbT0" />
+			<item group="groupGachaArmorT5" loot_prob_template="ProbT1" />
+			<item group="groupGachaArmorT6" loot_prob_template="ProbT2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxQuestArmorT6">
+			<item group="groupGachaArmorT6" />
+		</lootgroup>
+		<!-- <lootgroup name="gachaBoxSupplyBooksT1">
+			<item group="groupSupplyBooks_T1" />
+			<item group="groupSupplyBooks_T1" />
+			<item group="groupSupplyBooks_T1" />
+			<item group="groupSupplyBooks_T1" />
+		</lootgroup>
+		<lootgroup name="gachaBoxSupplyBooksT2">
+			<item group="groupSupplyBooks_T1" />
+			<item group="groupSupplyBooks_T1" />
+			<item group="groupSupplyBooks_T1" />
+			<item group="groupSupplyBooks_T2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxSupplyBooksT3">
+			<item group="groupSupplyBooks_T1" />
+			<item group="groupSupplyBooks_T1" />
+			<item group="groupSupplyBooks_T2" />
+			<item group="groupSupplyBooks_T2" />
+		</lootgroup>
+		<lootgroup name="gachaBoxSupplyBooksT4">
+			<item group="groupSupplyBooks_T1" />
+			<item group="groupSupplyBooks_T2" />
+			<item group="groupSupplyBooks_T2" />
+			<item group="groupSupplyBooks_T3" />
+		</lootgroup>
+		<lootgroup name="gachaBoxSupplyBooksT5">
+			<item group="groupSupplyBooks_T2" />
+			<item group="groupSupplyBooks_T2" />
+			<item group="groupSupplyBooks_T3" />
+			<item group="groupSupplyBooks_T3" />
+		</lootgroup>
+		<lootgroup name="gachaBoxSupplyBooksT6">
+			<item group="groupSupplyBooks_T2" />
+			<item group="groupSupplyBooks_T3" />
+			<item group="groupSupplyBooks_T3" />
+			<item group="groupSupplyBooks_T3" />
+		</lootgroup> -->
+	</insertAfter>
+	<insertAfter xpath="/lootcontainers/lootcontainer[@id='145']">
+		<!-- Gacha BOX Junk -->
+		<lootcontainer id="301" count="1,3" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="junk" />
+		</lootcontainer>
+		<!-- Gacha BOX Common -->
+		<lootcontainer id="302" count="1,3" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="gachaBoxQuestToolsT1" />
+			<item group="gachaBoxQuestWeaponsMeleeT1" />
+			<item group="gachaBoxQuestWeaponsRangedT1" />
+			<item group="gachaBoxQuestArmorT1" />
+			<!-- <item group="gachaBoxSupplyBooksT1" /> -->
+		</lootcontainer>
+		<!-- Gacha BOX Uncommon -->
+		<lootcontainer id="303" count="1,3" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="gachaBoxQuestToolsT2" />
+			<item group="gachaBoxQuestWeaponsMeleeT2" />
+			<item group="gachaBoxQuestWeaponsRangedT2" />
+			<item group="gachaBoxQuestArmorT2" />
+			<!-- <item group="gachaBoxSupplyBooksT2" /> -->
+		</lootcontainer>
+		<!-- Gacha BOX Rare -->
+		<lootcontainer id="304" count="1,3" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="gachaBoxQuestToolsT3" />
+			<item group="gachaBoxQuestWeaponsMeleeT3" />
+			<item group="gachaBoxQuestWeaponsRangedT3" />
+			<item group="gachaBoxQuestArmorT3" />
+			<!-- <item group="gachaBoxSupplyBooksT3" /> -->
+		</lootcontainer>
+		<!-- Gacha BOX Epic -->
+		<lootcontainer id="305" count="1,3" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="gachaBoxQuestToolsT4" />
+			<item group="gachaBoxQuestWeaponsMeleeT4" />
+			<item group="gachaBoxQuestWeaponsRangedT4" />
+			<item group="gachaBoxQuestArmorT4" />
+			<!-- <item group="gachaBoxSupplyBooksT4" /> -->
+		</lootcontainer>
+		<!-- Gacha BOX Legendary -->
+		<lootcontainer id="306" count="1,3" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="gachaBoxQuestToolsT5" />
+			<item group="gachaBoxQuestWeaponsMeleeT5" />
+			<item group="gachaBoxQuestWeaponsRangedT5" />
+			<item group="gachaBoxQuestArmorT5" />
+			<!-- <item group="gachaBoxSupplyBooksT5" /> -->
+		</lootcontainer>
+		<!-- Gacha BOX Heroic -->
+		<lootcontainer id="307" count="1,3" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="gachaBoxQuestToolsT6" />
+			<item group="gachaBoxQuestWeaponsMeleeT6" />
+			<item group="gachaBoxQuestWeaponsRangedT6" />
+			<item group="gachaBoxQuestArmorT6" />
+			<!-- <item group="gachaBoxSupplyBooksT6" /> -->
+		</lootcontainer>
+		<!-- Gacha BOX Junk -->
+		<lootcontainer id="308" count="1" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="groupcntShippingCrateJunk" count="1" />
+		</lootcontainer>
+		<!-- Gacha BOX Common -->
+		<lootcontainer id="309" count="1" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="groupcntShippingCrateCommon" count="1" />
+		</lootcontainer>
+		<!-- Gacha BOX Uncommon -->
+		<lootcontainer id="310" count="1" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="groupcntShippingCrateUncommon" count="1" />
+		</lootcontainer>
+		<!-- Gacha BOX Rare -->
+		<lootcontainer id="311" count="1" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="groupcntShippingCrateRare" count="1" />
+		</lootcontainer>
+		<!-- Gacha BOX Epic -->
+		<lootcontainer id="312" count="1" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="groupcntShippingCrateEpic" count="1" />
+		</lootcontainer>
+		<!-- Gacha BOX Legendary -->
+		<lootcontainer id="313" count="1" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="groupcntShippingCrateLegendary" count="1" />
+		</lootcontainer>
+		<!-- Gacha BOX Heroic -->
+		<lootcontainer id="314" count="1" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="groupcntShippingCrateHeroic" count="1" />
+		</lootcontainer>
+		<!-- Tier 1 Twitch -->
+		<lootcontainer id="315" count="1" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="groupcntShippingCrateT1" count="1" />
+		</lootcontainer>
+		<!-- Tier2 Twitch -->
+		<lootcontainer id="316" count="1" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="groupcntShippingCrateT2" count="1" />
+		</lootcontainer>
+		<!-- Tier 3 Twitch -->
+		<lootcontainer id="317" count="1" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="groupcntShippingCrateT3" count="1" />
+		</lootcontainer>
+		<!-- Tier 4 Twitch -->
+		<lootcontainer id="318" count="1" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="groupcntShippingCrateT4" count="1" />
+		</lootcontainer>
+		<!-- Tier 5 Twitch -->
+		<lootcontainer id="319" count="1" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="groupcntShippingCrateT5" count="1" />
+		</lootcontainer>
+		<!-- Tier 6 Twitch -->
+		<lootcontainer id="320" count="1" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="groupcntShippingCrateT6" count="1" />
+		</lootcontainer>
+		<!-- All Gachas-->
+		<lootcontainer id="321" count="1,3" size="8,2" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate">
+			<item group="groupcntShippingCrateAll" count="1" />
+		</lootcontainer>
+	</insertAfter>
+</configs>

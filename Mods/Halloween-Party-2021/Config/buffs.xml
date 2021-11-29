@@ -1,0 +1,39 @@
+<configs>
+	<append xpath="/buffs">
+  	<buff name="buffJackDeco" name_key="deco" description_key="" icon="ui_game_symbol_skull" icon_color="255,0,255" hidden="false" remove_on_death="false">
+		  <update_rate value="100"/>
+  		<stack_type value="ignore"/>
+  		<effect_group>
+  			<requirement name="IsNight"/>
+		    <passive_effect name="HealthMax" operation="perc_add" value="0.5"/>
+  			<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Plants/pumpkinJackoLanternPrefab" local_offset="0,0.4,0" local_rotation="0,0,0" parent_transform="Head"/>
+  			<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Knives/machetePrefab.prefab" local_offset="0,0,0" local_rotation="0,180,90" parent_transform="RightHand"/>
+  			<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Knives/machetePrefab.prefab" local_offset="0,0,0" local_rotation="0,0,90" parent_transform="LeftHand"/>
+			  <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffHalloweenHealing"/>
+			  <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffHalloweenHealing"/>
+  		</effect_group>
+  		<effect_group>
+  			<requirement name="!IsNight"/>
+  			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffJackDeco"/>
+  		</effect_group>
+  	</buff>
+  	<buff name="buffHalloweenHealing" name_key="deco" description_key="" icon="ui_game_symbol_skull" icon_color="255,0,255" hidden="false">
+  		<stack_type value="replace"/>
+		  <duration value="1.0"/>
+  		<effect_group>
+			  <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="set" value="25000"/>
+  		</effect_group>
+  	</buff>
+  	<buff name="buffSpecialAttack_Halloween" name_key="deco" description_key="" icon="ui_game_symbol_skull" icon_color="255,0,255" hidden="true">
+  		<stack_type value="ignore"/>
+  		<effect_group>
+  			<requirement name="HasBuff" buff="buffJackDeco" target="other"/>
+			  <passive_effect name="EntityDamage" operation="perc_add" value="2"/>
+  		</effect_group>
+  		<effect_group>
+				<requirement name="!HoldingItemHasTags" tags="halloweenWeapon"/>
+			  <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSpecialAttack_Halloween"/>
+  		</effect_group>
+  	</buff>
+	</append>
+</configs>

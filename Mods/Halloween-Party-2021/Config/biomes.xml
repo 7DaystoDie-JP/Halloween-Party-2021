@@ -1,0 +1,5 @@
+<configs>
+	<append xpath="worldgeneration/biomes/biome/subbiome/decorations">
+		<decoration type="block" blockname="plantedPumpkin3Harvest" prob="0.001" />
+	</append>
+</configs>

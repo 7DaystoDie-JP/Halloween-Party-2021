@@ -1,0 +1,93 @@
+Key,Source,Changes,English,Japanese
+JackLauncher,items,New,Jack Launcher,パンプキンランチャー
+JackLauncherDesc,items,New,Special item that is only available in Halloween!,ハロウィンの時期にだけ出現するお祭り武器。\nカボチャ弾を発射しよう！
+ammoJackRocketFrag,items,New,Jack Rocket Ammo(Flag), パンプキン弾(フラグ弾)
+ammoJackRocketFragDesc,items,New,This ammo is compatible with Pumpkin Launcher!,ハロウィンの時期にだけ出現するお祭り武器。\nパンプキンランチャーで発射しよう！
+ammoJackRocket,items,New,Jack Rocket Ammo, パンプキン弾
+ammoJackRocketDesc,items,New,This ammo is compatible with Pumpkin Launcher!,ハロウィンの時期にだけ出現するお祭り武器。\nパンプキンランチャーで発射しよう！
+JackHammer,items,New,Jack Hammer, パンプキンハンマー
+JackHammerDesc,items,New,Special item that is only available in Halloween!,ハロウィンの時期にだけ出現するお祭り武器。\nカボチャで殴ってゾンビを撃退しよう！
+JackGrenade,items,New,Jack Grenade, パンプキン爆弾
+JackGrenadeDesc,items,New,Special item that is only available in Halloween!,ハロウィンの時期にだけ出現するお祭り武器。\n投げまくろう！
+thrownTimedChargeJackOLantern,items,New,Jack Timed Charge, パンプキン時限爆弾
+thrownTimedChargeJackOLanternDesc,items,New,Special item that is only available in Halloween!,ハロウィンの時期にだけ出現するお祭り武器。\n投げまくろう！
+
+MinePumpkinJackOLantern,blocks,New,Jack Figure,ジャックオーランタン置物
+MinePumpkinJackOLanternDesc,blocks,New,Special item that is only available in Halloween!,ハロウィンの時期にだけ出現するお祭り置物
+TwitchAction_SupplyTurretPumpkinJackOLantern,UI,New,Figure Hank,ハンクの置物
+TwitchAction_SupplyTurretPumpkinJackOLanternCommand,UI,New,#Hank, #ハンク
+TwitchAction_SupplyTurretPumpkinJackOLanternDesc,UI,New,Spawn Hank figure,ハンクを出現させる
+
+JackCop,entityclasses,New,Jack Cop,ぱんぷきんぐ君
+TwitchAction_SupplyJackCop,UI,New,Pumpking,ぱんぷきんぐ君
+TwitchAction_SupplyJackCopCommand,UI,New,#Pumpking, #ぱんぷきんぐ
+TwitchAction_SupplyJackCopDesc,UI,New,Spawn Pumpking,ぱんぷきんぐ君を召還
+
+TwitchActionCategory_Halloween,UI,New,Halloween,ハロウィン
+
+TwitchAction_GachaBoxJunk,UI,New,Gacha Box Junk,ガチャBOX(2) - ジャンク
+TwitchAction_GachaBoxJunkCommand,UI,New,#junk,#ジャンク
+TwitchAction_GachaBoxJunkDesc,UI,New,Supply 1x GachaBox Junk,ガチャBOX - ジャンクを支給する
+TwitchAction_GachaBoxCommon,UI,New,Gacha Box Common,ガチャBOX(3) - コモン
+TwitchAction_GachaBoxCommonCommand,UI,New,#common,#コモン
+TwitchAction_GachaBoxCommonDesc,UI,New,Supply 1x GachaBox Common,ガチャBOX - コモンを支給する
+TwitchAction_GachaBoxUncommon,UI,New,Gacha Box Uncommon,ガチャBOX(4) - アンコモン
+TwitchAction_GachaBoxUncommonCommand,UI,New,#uncommon,#アンコモン
+TwitchAction_GachaBoxUncommonDesc,UI,New,Supply 1x GachaBox Uncommon,ガチャBOX - アンコモンを支給する
+TwitchAction_GachaBoxRare,UI,New,Gacha Box Rare,ガチャBOX(5) - レア
+TwitchAction_GachaBoxRareCommand,UI,New,#rare,#レア
+TwitchAction_GachaBoxRareDesc,UI,New,Supply 1x GachaBox Rare,ガチャBOX - レアを支給する
+TwitchAction_GachaBoxEpic,UI,New,Gacha Box Epic,ガチャBOX(6) - エピック
+TwitchAction_GachaBoxEpicCommand,UI,New,#epic,#エピック
+TwitchAction_GachaBoxEpicDesc,UI,New,Supply 1x GachaBox Epic,ガチャBOX - エピックを支給する
+TwitchAction_GachaBoxLegendary,UI,New,Gacha Box Legendary,ガチャBOX(7) - レジェンダリー
+TwitchAction_GachaBoxLegendaryCommand,UI,New,#legendary,#レジェンダリー
+TwitchAction_GachaBoxLegendaryDesc,UI,New,Supply 1x GachaBox Legendary,ガチャBOX - レジェンダリーを支給する
+TwitchAction_GachaBoxHeroic,UI,New,Gacha Box Heroic,ガチャBOX(8) - ヒロイック
+TwitchAction_GachaBoxHeroicCommand,UI,New,#heroic,#ヒロイック
+TwitchAction_GachaBoxHeroicDesc,UI,New,Supply 1x GachaBox Heroic,ガチャBOX - ヒロイックを支給する
+
+TwitchAction_GachaBoxT1,UI,New,Gacha Box Tier1,ガチャBOX(9) - ティア1
+TwitchAction_GachaBoxT1Command,UI,New,#1,#ガチャ1
+TwitchAction_GachaBoxT1Desc,UI,New,Supply 1x GachaBox Tier1,ガチャBOX - ティア1グループからランダムで1箱支給する
+TwitchAction_GachaBoxT2,UI,New,Gacha Box Tier2,ガチャBOX(10) - ティア2
+TwitchAction_GachaBoxT2Command,UI,New,#2,#ガチャ2
+TwitchAction_GachaBoxT2Desc,UI,New,Supply 1x GachaBox Tier2,ガチャBOX - ティア2グループからランダムで1箱支給する
+TwitchAction_GachaBoxT3,UI,New,Gacha Box Tier3,ガチャBOX(11) - ティア3
+TwitchAction_GachaBoxT3Command,UI,New,#3,#ガチャ3
+TwitchAction_GachaBoxT3Desc,UI,New,Supply 1x GachaBox Tier3,ガチャBOX - ティア3グループからランダムで1箱支給する
+TwitchAction_GachaBoxT4,UI,New,Gacha Box Tier4,ガチャBOX(12) - ティア4
+TwitchAction_GachaBoxT4Command,UI,New,#4,#ガチャ4
+TwitchAction_GachaBoxT4Desc,UI,New,Supply 1x GachaBox Tier4,ガチャBOX - ティア4グループからランダムで1箱支給する
+TwitchAction_GachaBoxT5,UI,New,Gacha Box Tier5,ガチャBOX(13) - ティア5
+TwitchAction_GachaBoxT5Command,UI,New,#5,#ガチャ5
+TwitchAction_GachaBoxT5Desc,UI,New,Supply 1x GachaBox Tier5,ガチャBOX - ティア5グループからランダムで1箱支給する
+TwitchAction_GachaBoxT6,UI,New,Gacha Box Tier6,ガチャBOX(14) - ティア6
+TwitchAction_GachaBoxT6Command,UI,New,#6,#ガチャ6
+TwitchAction_GachaBoxT6Desc,UI,New,Supply 1x GachaBox Tier6,ガチャBOX - ティア6グループからランダムで1箱支給する
+TwitchAction_GachaBoxAll,UI,New,Free Gacha Box,ガチャBOX(15) - フリー
+TwitchAction_GachaBoxAllCommand,UI,New,#free,#ガチャフリー
+TwitchAction_GachaBoxAllDesc,UI,New,Supply 1x GachaBox free,1日1回ガチャBOXを1~3種類無償で支給する
+
+
+cntShippingCrateJunk,items,New,Gacha Box Junk,ガチャBOX - [9C8867]ジャンク[-]
+cntShippingCrateCommon,items,New,Gacha Box Common,ガチャBOX - [CF7F29]コモン[-]
+cntShippingCrateUncommon,items,New,Gacha Box Uncommon,ガチャBOX - [A2A41B]アンコモン[-]
+cntShippingCrateRare,items,New,Gacha Box Rare,ガチャBOX - [42C234]レア[-]
+cntShippingCrateEpic,items,New,Gacha Box Epic,ガチャBOX - [315DCE]エピック[-]
+cntShippingCrateLegendary,items,New,Gacha Box Legendary,ガチャBOX - [A42ACC]レジェンダリー[-]
+cntShippingCrateHeroic,items,New,Gacha Box Heroic,ガチャBOX - [660066]ヒロイック[-]
+cntLootCrateJunk,items,New,Gacha Box Junk,ガチャBOX - [9C8867]ジャンク[-]
+cntLootCrateCommon,items,New,Gacha Box Common,ガチャBOX - [CF7F29]コモン[-]
+cntLootCrateUncommon,items,New,Gacha Box Uncommon,ガチャBOX - [A2A41B]アンコモン[-]
+cntLootCrateRare,items,New,Gacha Box Rare,ガチャBOX - [42C234]レア[-]
+cntLootCrateEpic,items,New,Gacha Box Epic,ガチャBOX - [315DCE]エピック[-]
+cntLootCrateLegendary,items,New,Gacha Box Legendary,ガチャBOX - [A42ACC]レジェンダリー[-]
+cntLootCrateHeroic,items,New,Gacha Box Heroic,ガチャBOX - [660066]ヒロイック[-]
+cntShippingCrateJunkDesc,items,New,Gacha Box Junk,指定されたアイテムがランダムに入っているボックスで、主に報酬等で入手できます。\n内容物(完全ランダム。ゴミから掘り出し物まで)
+cntShippingCrateCommonDesc,items,New,Gacha Box Common,指定されたアイテムがランダムに入っているボックスで、主に報酬等で入手できます。\n内容物(生活必需品等)
+cntShippingCrateUncommonDesc,items,New,Gacha Box Uncommon,指定されたアイテムがランダムに入っているボックスで、主に報酬等で入手できます。\n内容物(武器防具ツール等 *低レア相当)
+cntShippingCrateRareDesc,items,New,Gacha Box Rare,指定されたアイテムがランダムに入っているボックスで、主に報酬等で入手できます。\n内容物(武器防具ツール等 *低中レア相当)
+cntShippingCrateEpicDesc,items,New,Gacha Box Epic,指定されたアイテムがランダムに入っているボックスで、主に報酬等で入手できます。\n内容物(武器防具ツール等 *中高レア相当)
+cntShippingCrateLegendaryDesc,items,New,Gacha Box Legendary,指定されたアイテムがランダムに入っているボックスで、主に報酬等で入手できます。\n内容物(武器防具ツール等 *高レア相当
+cntShippingCrateHeroicDesc,items,New,Gacha Box Heroic,指定されたアイテムがランダムに入っているボックスで、主に報酬等で入手できます。\n内容物(武器防具ツール等 *高レア相当)

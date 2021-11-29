@@ -1,0 +1,198 @@
+<configs>
+	<set xpath="/blocks/block[contains(@name,'cntShippingCrate')]/property[@name='Model']/@value">Entities/Plants/pumpkinJackoLanternPrefab</set>
+	<set xpath="/blocks/block[contains(@name,'cntGarageStorage')]/property[@name='Shape']/@value">ModelEntity</set>
+	<set xpath="/blocks/block[contains(@name,'cntGarageStorage')]/property[@name='Model']/@value">Entities/Plants/pumpkinJackoLanternPrefab</set>
+	<append xpath="/blocks">
+		<block name="MinePumpkinJackOLantern">
+			<property name="ItemTypeIcon" value="explosion" />
+			<property name="CustomIcon" value="decoPumpkinJackOLantern" />
+			<property name="Class" value="Mine" />
+			<property name="Tags" value="Mine" />
+			<property name="Material" value="MLandMine" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="Entities/Plants/pumpkinJackoLanternPrefab" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="OnlySimpleRotations" value="true" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="Stacknumber" value="25" />
+			<!-- STK explosives -->
+			<property name="MaxDamage" value="4" />
+			<property name="TriggerDelay" value="0.5" />
+			<property name="TriggerSound" value="landmine_trigger" />
+			<property name="Explosion.ParticleIndex" value="11" />
+			<property name="Explosion.RadiusBlocks" value="15" />
+			<property name="Explosion.RadiusEntities" value="0" />
+			<property name="Explosion.BlockDamage" value="1000" />
+			<property name="Explosion.EntityDamage" value="0" />
+			<!-- damage for entities in the center of the explosion. -->
+			<property name="Explosion.DamageBonus.stone" value="1" />
+			<property name="Explosion.DamageBonus.metal" value="1" />
+			<property name="Explosion.DamageBonus.earth" value="0" />
+			<property name="Explosion.DamageBonus.wood" value="0" />
+			<property name="Explosion.DamageBonus.water" value="0" />
+			<property name="CanPickup" value="false" />
+			<drop event="Destroy" count="0" />
+			<property name="Group" value="Tools/Traps" />
+			<property name="EconomicValue" value="97" />
+			<property name="FilterTags" value="fdecor,ftraps" />
+			<property name="SortOrder1" value="70g0" />
+		</block>
+		<block name="MechanicalAllyBlockBreak">
+			<property name="CreativeMode" value="None" />
+			<property name="Extends" value="woodWeakNoUpgradeMaster" />
+			<property name="Class" value="TrapDoor" />
+			<property name="Material" value="Mcloth" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="Plate" />
+			<property name="ImposterExchange" value="imposterBlock" param1="86" />
+			<property name="Mesh" value="transparent" />
+			<property name="Texture" value="285" />
+			<property name="TriggerDelay" value="0.01" />
+			<property name="TriggerSound" value="" />
+			<property name="Path" value="solid" />
+			<drop event="Fall" count="0" prob="0" />
+			<property name="ShowModelOnFall" value="false" />
+		</block>
+		<block name="MechanicalAllyPlate">
+			<property name="CreativeMode" value="None" />
+			<property name="Extends" value="looseBoardsTrapPlate1x1" />
+			<property name="Material" value="Mmetal_weak" />
+			<property name="Mesh" value="transparent" />
+			<property name="Texture" value="285" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
+			<property name="PlantGrowing.Next" value="MechanicalAllyBlockBreak" />
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.GrowthRate" value="0.1" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="PlantGrowing.LightLevelStay" value="0" />
+		</block>
+		<block name="PumpkinJackOLantern">
+			<property name="CreativeMode" value="None" />
+			<property name="Extends" value="decoMannequinFemale" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="plate" />
+			<property name="Material" value="Mmetal_weak" />
+			<property name="Mesh" value="transparent" />
+			<property name="Texture" value="285" />
+			<property name="StabilitySupport" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true" />
+			<property name="PlantGrowing.Next" value="MechanicalAllyPlate" />
+			<property name="PlantGrowing.GrowOnTop" value="PumpkinJackOLanternSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.GrowthRate" value="0.01" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="PlantGrowing.LightLevelStay" value="0" />
+		</block>
+		<block name="PumpkinJackOLanternSpawner">
+			<property name="CreativeMode" value="Player" />
+			<property name="Material" value="SpawnerMaterials" />
+			<property name="Extends" value="spawnTrader" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="Entities/Decor/cobwebPrefab" />
+			<drop event="Fall" count="0" prob="0" />
+			<property name="SpawnClass" value="TurretPumpkinJackOLantern" />
+		</block>
+		<block name="cntShippingCrateJunk">
+			<property name="CustomIcon" value="cntShippingCrateHero" />
+			<property name="ItemTypeIcon" value="twitch_drop"/>
+			<property name="CustomIconTint" value="9C8867" />
+			<property name="DescriptionKey" value="cntShippingCrateJunkDesc" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Path" value="solid" />
+			<property name="Model" value="#Entities/LootContainers?crate_storePrefab.prefab" />
+			<property name="PickupJournalEntry" value="gachaboxTip" />
+			<property name="DisplayInfo" value="Name" />
+			<property name="Material" value="Mwood_regular" />
+			<drop event="Destroy" count="0" />
+			<property name="DowngradeBlock" value="cntLootCrateJunk" />
+			<property name="FilterTags" value="floot" />
+		</block>
+		<block name="cntShippingCrateCommon">
+			<property name="Extends" value="cntShippingCrateJunk" />
+			<property name="ItemTypeIcon" value="twitch_drop"/>
+			<property name="CustomIconTint" value="CF7F29" />
+			<property name="DescriptionKey" value="cntShippingCrateCommonDesc" />
+			<property name="DowngradeBlock" value="cntLootCrateCommon" />
+		</block>
+		<block name="cntShippingCrateUncommon">
+			<property name="Extends" value="cntShippingCrateJunk" />
+			<property name="ItemTypeIcon" value="twitch_drop"/>
+			<property name="CustomIconTint" value="A2A41B" />
+			<property name="DescriptionKey" value="cntShippingCrateUncommonDesc" />
+			<property name="DowngradeBlock" value="cntLootCrateUncommon" />
+		</block>
+		<block name="cntShippingCrateRare">
+			<property name="Extends" value="cntShippingCrateJunk" />
+			<property name="ItemTypeIcon" value="twitch_drop"/>
+			<property name="CustomIconTint" value="42C234" />
+			<property name="DescriptionKey" value="cntShippingCrateRareDesc" />
+			<property name="DowngradeBlock" value="cntLootCrateRare" />
+		</block>
+		<block name="cntShippingCrateEpic">
+			<property name="Extends" value="cntShippingCrateJunk" />
+			<property name="ItemTypeIcon" value="twitch_drop"/>
+			<property name="CustomIconTint" value="315DCE" />
+			<property name="DescriptionKey" value="cntShippingCrateEpicDesc" />
+			<property name="DowngradeBlock" value="cntLootCrateEpic" />
+		</block>
+		<block name="cntShippingCrateLegendary">
+			<property name="Extends" value="cntShippingCrateJunk" />
+			<property name="ItemTypeIcon" value="twitch_drop"/>
+			<property name="CustomIconTint" value="A42ACC" />
+			<property name="DescriptionKey" value="cntShippingCrateLegendaryDesc" />
+			<property name="DowngradeBlock" value="cntLootCrateLegendary" />
+		</block>
+		<block name="cntShippingCrateHeroic">
+			<property name="Extends" value="cntShippingCrateJunk" />
+			<property name="ItemTypeIcon" value="twitch_drop"/>
+			<property name="CustomIconTint" value="660066" />
+			<property name="DescriptionKey" value="cntShippingCrateHeroicDesc" />
+			<property name="DowngradeBlock" value="cntLootCrateHeroic" />
+		</block>
+		<block name="cntLootCrateJunk">
+			<property name="CustomIcon" value="cntGarageStorage" />
+			<property name="DescriptionKey" value="creativeMenuBlockGroupDesc" />
+			<property name="Class" value="Loot" />
+			<property name="Material" value="MCardboardLoot" />
+			<property name="Path" value="solid" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="cube_no_cull" />
+			<!-- will not hide adjacent faces (if rotated) -->
+			<property name="AllowAllRotations" value="true" />
+			<property name="Texture" value="276,276,270,270,270,270" />
+			<property name="LootList" value="301" />
+			<property class="RepairItems">
+				<property name="resourcePaper" value="10" />
+				<property name="resourceWood" value="4" />
+			</property>
+			<drop event="Destroy" name="resourcePaper" count="2,8" />
+			<property name="FilterTags" value="floot" />
+		</block>
+		<block name="cntLootCrateCommon">
+			<property name="Extends" value="cntLootCrateJunk" />
+			<property name="LootList" value="302" />
+		</block>
+		<block name="cntLootCrateUncommon">
+			<property name="Extends" value="cntLootCrateJunk" />
+			<property name="LootList" value="303" />
+		</block>
+		<block name="cntLootCrateRare">
+			<property name="Extends" value="cntLootCrateJunk" />
+			<property name="LootList" value="304" />
+		</block>
+		<block name="cntLootCrateEpic">
+			<property name="Extends" value="cntLootCrateJunk" />
+			<property name="LootList" value="305" />
+		</block>
+		<block name="cntLootCrateLegendary">
+			<property name="Extends" value="cntLootCrateJunk" />
+			<property name="LootList" value="306" />
+		</block>
+		<block name="cntLootCrateHeroic">
+			<property name="Extends" value="cntLootCrateJunk" />
+			<property name="LootList" value="307" />
+		</block>
+	</append>
+</configs>

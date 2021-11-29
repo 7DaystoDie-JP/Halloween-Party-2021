@@ -1,0 +1,11 @@
+<configs>
+	<!--Details displayed in bottom right corner of screen-->
+	<append xpath="/windows/window[@name='HUDRightStatBars']">
+		<rect name="hud" pos="-374,63" rows="1" cols="1" width="80" controller="PlayerStatsWindow" visible="{statvisible}">
+			<sprite depth="1" pos="0,0" height="57" width="120" color="0,0,0,180" type="sliced" foregroundlayer="true" />
+			<sprite depth="2" name="windowIcon" width="30" height="30" pos="4,-4" sprite="ui_game_symbol_skull" color="[iconColor]" foregroundlayer="true" />
+			<label depth="2" name="TextContent" pos="36,-4" width="80" height="18" text="PUMPKIN KILLS" font_size="20" color="[white]" />
+			<label depth="2" name="TextContent" pos="36,-16" width="80" height="30" text="[DECEA3]{cvar($halloweenKillCount:0)}" font_size="30" />
+		</rect>
+	</append>
+</configs>

@@ -1,0 +1,27 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="JackGrenade" count="1" craft_time="10">
+			<ingredient name="decoPumpkinJackOLantern" count="10" />
+		</recipe>
+		<recipe name="thrownTimedChargeJackOLantern" count="1" craft_time="10">
+			<ingredient name="decoPumpkinJackOLantern" count="10" />
+		</recipe>
+		<recipe name="MinePumpkinJackOLantern" count="1" craft_time="10">
+			<ingredient name="decoPumpkinJackOLantern" count="10" />
+		</recipe>
+		<recipe name="JackHammer" count="1" craft_time="10" craft_area="workbench">
+			<ingredient name="meleeWpnSledgeT0StoneSledgehammer" count="1" />
+			<ingredient name="decoPumpkinJackOLantern" count="20" />
+		</recipe>
+		<recipe name="ammoJackRocket" count="1" craft_time="10">
+			<ingredient name="decoPumpkinJackOLantern" count="30" />
+		</recipe>
+		<recipe name="ammoJackRocketFrag" count="1" craft_time="10">
+			<ingredient name="decoPumpkinJackOLantern" count="30" />
+		</recipe>
+		<recipe name="JackLauncher" count="1" craft_time="10" craft_area="workbench" >
+			<ingredient name="gunExplosivesT3RocketLauncher" count="1" />
+			<ingredient name="decoPumpkinJackOLantern" count="3" />
+		</recipe>
+	</append>
+</configs>

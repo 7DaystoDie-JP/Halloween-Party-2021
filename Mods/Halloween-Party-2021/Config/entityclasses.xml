@@ -1,0 +1,210 @@
+<configs>
+	<!-- Jack buff add -->
+	<set xpath="/entity_classes/entity_class[contains(@name,'TwitchAction_')]/property[@name='Mesh']/@value">Plants/pumpkinJackoLanternPrefab</set>
+	<append xpath="/entity_classes/entity_class[contains(@name,'TwitchAction_')]">
+		<property name="SizeScale" value="1" />
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='playerMale']">
+		<effect_group>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$halloweenKillCount" operation="add" value="1">
+				<requirement name="HasBuff" buff="buffJackDeco" target="other" />
+			</triggered_effect>
+		</effect_group>
+	</append>
+	<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']">
+		<effect_group>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="buffJackDeco" />
+		</effect_group>
+	</append>
+	<!-- Entity add -->
+	<append xpath="/entity_classes">
+		<entity_class name="TurretPumpkinJackOLantern">
+			<property name="HideInSpawnMenu" value="false" />
+			<property name="Archetype" value="Hank" />
+			<property name="EntityType" value="Player" />
+			<property name="Faction" value="whiteriver" />
+			<property name="Mesh" value="Player/Male/player_maleRagdoll" />
+			<property name="AvatarController" value="AvatarUMAController" />
+			<property name="ModelType" value="NpcUMA" />
+			<property name="HasRagdoll" value="true" />
+			<property name="Prefab" value="NPC" />
+			<property name="Class" value="EntitySurvivor" />
+			<property name="Parent" value="Players" />
+			<property name="PhysicsBody" value="PlayerUMA" />
+			<property name="IsEnemyEntity" value="true" />
+			<property name="MaxViewAngle" value="360" />
+			<property name="SightRange" value="35" />
+			<property name="SightLightThreshold" value="-2,150" />
+			<property name="YawRange" value="90" />
+			<property name="PitchRange" value="90" />
+			<property name="MoveSpeed" value="0" />
+			<property name="MoveSpeedAggro" value="0,0" />
+			<property name="MoveSpeedPanic" value="0" />
+			<property name="DismemberMultiplierHead" value="0" />
+			<property name="DismemberMultiplierArms" value=".7" />
+			<property name="DismemberMultiplierLegs" value=".7" />
+			<property name="ItemsOnEnterGame.GameModeSurvival" value="JackHammer" />
+			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="JackHammer" />
+			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="JackHammer" />
+			<property name="Weight" value="70" />
+			<property name="SurfaceCategory" value="organic" />
+			<property name="SoundRandomTime" value="200.0" />
+			<property name="SoundRandom" value="Player_Male/player1stamina" />
+			<property name="SoundHurt" value="Player_Male/player1painlg" />
+			<property name="SoundHurtSmall" value="Player_Male/player1painsm" />
+			<property name="SoundDeath" value="Player_Male/player1death" />
+			<property name="SoundStamina" value="Player_Male/player1stamina" />
+			<property name="SoundDrownPain" value="Player_Male/player1drownpain" />
+			<property name="SoundWaterSurface" value="Player_Male/player1drownsurface" />
+			<property name="SoundDrownDeath" value="Player_Male/player1drowndeath" />
+			<property name="TimeStayAfterDeath" value="0.5" />
+			<property name="HasDeathAnim" value="true" />
+			<property name="AIPackages" value="Oaks Basic,Oaks Melee" />
+			<effect_group>
+				<requirement name="HoldingItemHasTags" tags="melee,grunting,light,perkFlurryOfBlows,weapon,meleeWeapon,attIntellect,perkElectrocutioner,canHaveCosmetic" />
+				<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingOne,buffInjuryBleedingTwo,buffInjuryBleeding,buffBurningZombie,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffBurningMolotov,buffIsOnFire,buffBurningWeapon,buffShocked" />
+				<passive_effect name="HealthMax" operation="base_set" value="1000" />
+			</effect_group>
+		</entity_class>
+		<entity_class name="JackCop" extends="zombieTemplateMale">
+			<property name="Tags" value="entity,zombie,walker,zombieCop" />
+			<property name="Mesh" value="#Entities/Zombies?Zombies/zombieStandardCopRagdoll.prefab" />
+			<property name="Class" value="EntityZombieCop" />
+			<property name="WalkType" value="1" />
+			<property name="RightHandJointName" value="Jaw" />
+			<property name="AvatarController" value="AvatarZombie01Controller" />
+			<property name="ModelType" value="Standard" />
+			<property name="Mass" value="320" />
+			<property name="Weight" value="70" />
+			<property name="PhysicsBody" value="zombieFat" />
+			<property name="RootMotion" value="true" />
+			<property name="HasDeathAnim" value="true" />
+			<property name="PushFactor" value="20" />
+			<property name="AITask-1" value="BreakBlock" />
+			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=4;duration=5" />
+			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityEnemyAnimal,0,EntityPlayer" />
+			<property name="AITask-4" value="ApproachSpot" />
+			<property name="AITask-5" value="Look" />
+			<property name="AITask-6" value="Wander" />
+			<property name="AITask-7" value="" />
+			<!-- Marks end, so we don't inheirit -->
+			<property name="SoundRandom" value="Enemies/Acid_Puking_Hulk/hulkroam" />
+			<property name="SoundAlert" value="Enemies/Acid_Puking_Hulk/hulkalert" />
+			<property name="SoundAttack" value="Enemies/Acid_Puking_Hulk/hulkattack" />
+			<property name="SoundHurt" value="Enemies/Acid_Puking_Hulk/hulkpain" />
+			<property name="SoundDeath" value="Enemies/Acid_Puking_Hulk/hulkdeath" />
+			<property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense" />
+			<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
+			<property name="SoundExplodeWarn" value="hulkexplodewarning" />
+			<property name="DismemberMultiplierLegs" value="0" />
+			<property name="LegCrawlerThreshold" value="0" />
+			<property name="LegCrippleThreshold" value="0" />
+			<property name="KnockdownProneDamageThreshold" value="0" />
+			<property name="KnockdownKneelDamageThreshold" value="0" />
+			<property name="LegsExplosionDamageMultiplier" value="2" />
+			<!-- volatile so vulnerable to land mines/explosives -->
+			<property name="ArmsExplosionDamageMultiplier" value="2" />
+			<property name="HeadExplosionDamageMultiplier" value="2" />
+			<property name="ChestExplosionDamageMultiplier" value="2" />
+			<property name="ReplaceMaterial1" value="#Entities/Zombies?Zombies/Materials/Z_eye1.mat" />
+			<!-- Gameplay -->
+			<property name="HandItem" value="RVM_JackMultiVomitHand" />
+			<property name="Explosion.ParticleIndex" value="8" />
+			<property name="Explosion.RadiusBlocks" value="5" />
+			<property name="Explosion.RadiusEntities" value="6" />
+			<property name="Explosion.BlockDamage" value="500" />
+			<property name="Explosion.EntityDamage" value="150" />
+			<property name="Explosion.DamageBonus.earth" value="0" />
+			<property name="JumpMaxDistance" value="0, 0" />
+			<property name="ExperienceGain" value="750" />
+			<!-- XP strong -->
+			<property name="LootDropEntityClass" value="EntityLootContainerStrong" />
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="250" />
+				<passive_effect name="HealthMax" operation="perc_set" value="1" />
+				<!-- Zombie HP scale -->
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1" />
+			</effect_group>
+		</entity_class>
+	</append>
+	<append xpath="/entity_classes">
+		<entity_class name="TwitchAction_GachaBoxJunk" extends="twitch_crate_template">
+			<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab" />
+			<property name="LootListOnDeath" value="308" />
+		</entity_class>
+		<entity_class name="TwitchAction_GachaBoxCommon" extends="twitch_crate_template">
+			<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab" />
+			<property name="LootListOnDeath" value="309" />
+		</entity_class>
+		<entity_class name="TwitchAction_GachaBoxUncommon" extends="twitch_crate_template">
+			<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab" />
+			<property name="LootListOnDeath" value="310" />
+		</entity_class>
+		<entity_class name="TwitchAction_GachaBoxRare" extends="twitch_crate_template">
+			<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab" />
+			<property name="LootListOnDeath" value="311" />
+		</entity_class>
+		<entity_class name="TwitchAction_GachaBoxEpic" extends="twitch_crate_template">
+			<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab" />
+			<property name="LootListOnDeath" value="312" />
+		</entity_class>
+		<entity_class name="TwitchAction_GachaBoxLegendary" extends="twitch_crate_template">
+			<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab" />
+			<property name="LootListOnDeath" value="313" />
+		</entity_class>
+		<entity_class name="TwitchAction_GachaBoxHeroic" extends="twitch_crate_template">
+			<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab" />
+			<property name="LootListOnDeath" value="314" />
+		</entity_class>
+		<entity_class name="TwitchAction_GachaBoxT1" extends="twitch_crate_template">
+			<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab" />
+			<property name="LootListOnDeath" value="315" />
+		</entity_class>
+		<entity_class name="TwitchAction_GachaBoxT2" extends="twitch_crate_template">
+			<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab" />
+			<property name="LootListOnDeath" value="316" />
+		</entity_class>
+		<entity_class name="TwitchAction_GachaBoxT3" extends="twitch_crate_template">
+			<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab" />
+			<property name="LootListOnDeath" value="317" />
+		</entity_class>
+		<entity_class name="TwitchAction_GachaBoxT4" extends="twitch_crate_template">
+			<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab" />
+			<property name="LootListOnDeath" value="318" />
+		</entity_class>
+		<entity_class name="TwitchAction_GachaBoxT5" extends="twitch_crate_template">
+			<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab" />
+			<property name="LootListOnDeath" value="319" />
+		</entity_class>
+		<entity_class name="TwitchAction_GachaBoxT6" extends="twitch_crate_template">
+			<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab" />
+			<property name="LootListOnDeath" value="320" />
+		</entity_class>
+		<entity_class name="TwitchAction_GachaBoxAll" extends="twitch_crate_template">
+			<property name="Mesh" value="#Entities/LootContainers?crate_store_ShotgunPrefab.prefab" />
+			<property name="LootListOnDeath" value="321" />
+		</entity_class>
+	</append>
+	<set xpath="/entity_classes/entity_class[contains(@name,'TwitchAction_')]/property[@name='Mesh']/@value">Plants/pumpkinJackoLanternPrefab</set>
+	<append xpath="/entity_classes/entity_class[contains(@name,'TwitchAction_')]">
+		<property name="SizeScale" value="1" />
+	</append>
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale' or @name='zombieWightFeral' or @name='zombieWightRadiated' or @name='zombieWightRadiated' or @name='zombieBoe' or @name='zombieBoeFeral' or @name='zombieFootballPlayer' or @name='zombieFemaleFat' or @name='zombieJoe' or @name='zombieJoeFeral' or @name='zombieJoeRadiated' or @name='zombieJanitor' or @name='zombieJanitorFeral' or @name='zombieJanitorRadiated' or @name='zombieMoe' or @name='zombieArlene' or @name='zombieArleneFeral' or @name='zombieArleneRadiated' or @name='zombieLab' or @name='zombieScreamer' or @name='zombieDarlene' or @name='zombieDarleneFeral' or @name='zombieDarleneRadiated' or @name='zombieMarlene' or @name='zombieMarleneFeral' or @name='zombieMarleneRadiated' or @name='zombieYo' or @name='zombieYoFeral' or @name='zombieYoRadiated' or @name='zombieSteve' or @name='zombieSteveFeral' or @name='zombieSteveRadiated' or @name='zombieSteveCrawler' or @name='zombieSteveCrawlerFeral' or @name='zombieBusinessMan' or @name='zombieBusinessManFeral' or @name='zombieSnow' or @name='zombieSnowFeral' or @name='zombieSpider' or @name='zombieBurnt' or @name='zombieNurse' or @name='zombieNurseFeral' or @name='zombieFatHawaiian' or @name='zombieFatCop' or @name='zombieMaleHazmat' or @name='zombieUtilityWorker' or @name='zombieUtilityWorkerFeral' or @name='zombieSoldier' or @name='zombieDemolition' or @name='zombieSkateboarder' or @name='zombieSkateboarderFeral' or @name='zombieSkateboarderRadiated' or @name='zombieCheerleader' or @name='zombieCheerleaderFeral' or @name='zombieCheerleaderRadiated' or @name='zombieOldTimer' or @name='zombieBiker' or @name='zombieBikerFeral' or @name='zombieBikerRadiated' or @name='zombieFarmer' or @name='zombieFarmerFeral' or @name='zombieStripper' or @name='zombieStripperFeral' or @name='zombieFootballPlayerRadiated' or @name='zombieBusinessManRadiated'or @name='legendaryZombieBusinessMan' or @name='zombieBurntFeral'or @name='zombieBurntRadiated'or @name='zombieNurseRadiated' or @name='zombieUtilityWorkerRadiated'or @name='legendaryZombieUtilityWorker'or @name='legendaryZombieBiker'	]/property[@name='LootDropProb']/@value">0.5</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale' or @name='zombieWightFeral' or @name='zombieWightRadiated' or @name='zombieWightRadiated' or @name='zombieBoe' or @name='zombieBoeFeral' or @name='zombieFootballPlayer' or @name='zombieFemaleFat' or @name='zombieJoe' or @name='zombieJoeFeral' or @name='zombieJoeRadiated' or @name='zombieJanitor' or @name='zombieJanitorFeral' or @name='zombieJanitorRadiated' or @name='zombieMoe' or @name='zombieArlene' or @name='zombieArleneFeral' or @name='zombieArleneRadiated' or @name='zombieLab' or @name='zombieScreamer' or @name='zombieDarlene' or @name='zombieDarleneFeral' or @name='zombieDarleneRadiated' or @name='zombieMarlene' or @name='zombieMarleneFeral' or @name='zombieMarleneRadiated' or @name='zombieYo' or @name='zombieYoFeral' or @name='zombieYoRadiated' or @name='zombieSteve' or @name='zombieSteveFeral' or @name='zombieSteveRadiated' or @name='zombieSteveCrawler' or @name='zombieSteveCrawlerFeral' or @name='zombieBusinessMan' or @name='zombieBusinessManFeral' or @name='zombieSnow' or @name='zombieSnowFeral' or @name='zombieSpider' or @name='zombieBurnt' or @name='zombieNurse' or @name='zombieNurseFeral' or @name='zombieFatHawaiian' or @name='zombieFatCop' or @name='zombieMaleHazmat' or @name='zombieUtilityWorker' or @name='zombieUtilityWorkerFeral' or @name='zombieSoldier' or @name='zombieDemolition' or @name='zombieSkateboarder' or @name='zombieSkateboarderFeral' or @name='zombieSkateboarderRadiated' or @name='zombieCheerleader' or @name='zombieCheerleaderFeral' or @name='zombieCheerleaderRadiated' or @name='zombieOldTimer' or @name='zombieBiker' or @name='zombieBikerFeral' or @name='zombieBikerRadiated' or @name='zombieFarmer' or @name='zombieFarmerFeral' or @name='zombieStripper' or @name='zombieStripperFeral' or @name='zombieFootballPlayerRadiated' or @name='zombieBusinessManRadiated'or @name='legendaryZombieBusinessMan' or @name='zombieBurntFeral'or @name='zombieBurntRadiated'or @name='zombieNurseRadiated' or @name='zombieUtilityWorkerRadiated'or @name='legendaryZombieUtilityWorker'or @name='legendaryZombieBiker'	]/property[@name='LootDropEntityClass']/@value">EntityLootContainer_Halloween</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBoeRadiated' or @name='zombieFemaleFatFeral' or @name='zombieFemaleFatRadiated' or @name='zombieMoeFeral' or @name='zombieMoeRadiated' or @name='zombieLabFeral' or @name='zombieLabRadiated' or @name='zombieScreamerFeral' or @name='zombieScreamerRadiated' or @name='zombieSnowFeral' or @name='zombieSnowRadiated' or @name='zombieSpiderFeral' or @name='zombieSpiderRadiated' or @name='zombieFatHawaiianFeral' or @name='zombieFatHawaiianRadiated' or @name='zombieFatCopFeral'or @name='zombieFatCopRadiated'or @name='zombieMaleHazmatFeral'or @name='zombieMaleHazmatRadiated'or @name='zombieSoldierFeral'or @name='zombieSoldierRadiated'or @name='zombieDemolition'or @name='zombieOldTimerFeral'or @name='zombieOldTimerRadiated'or @name='zombieFarmerFeral'or @name='zombieStripperFeral']/property[@name='LootDropProb']/@value">0.5</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBoeRadiated' or @name='zombieFemaleFatFeral' or @name='zombieFemaleFatRadiated' or @name='zombieMoeFeral' or @name='zombieMoeRadiated' or @name='zombieLabFeral' or @name='zombieLabRadiated' or @name='zombieScreamerFeral' or @name='zombieScreamerRadiated' or @name='zombieSnowFeral' or @name='zombieSnowRadiated' or @name='zombieSpiderFeral' or @name='zombieSpiderRadiated' or @name='zombieFatHawaiianFeral' or @name='zombieFatHawaiianRadiated' or @name='zombieFatCopFeral'or @name='zombieFatCopRadiated'or @name='zombieMaleHazmatFeral'or @name='zombieMaleHazmatRadiated'or @name='zombieSoldierFeral'or @name='zombieSoldierRadiated'or @name='zombieDemolition'or @name='zombieOldTimerFeral'or @name='zombieOldTimerRadiated'or @name='zombieFarmerFeral'or @name='zombieStripperFeral']/property[@name='LootDropEntityClass']/@value">EntityLootContainer_Halloween</set>
+	<append xpath="/entity_classes">
+		<entity_class name="EntityLootContainer_Halloween">
+			<property name="Mesh" value="Plants/pumpkinJackoLanternPrefab" />
+			<property name="ModelType" value="Custom" />
+			<property name="Prefab" value="Backpack" />
+			<property name="Class" value="EntityLootContainer" />
+			<property name="Parent" value="Backpack" />
+			<property name="IsEnemyEntity" value="false" />
+			<property name="TimeStayAfterDeath" value="60" />
+			<property name="LootListOnDeath" value="210" />
+			<property name="Faction" value="none" />
+			<property name="SizeScale" value="0.5" />
+		</entity_class>
+	</append>
+</configs>
